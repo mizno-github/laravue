@@ -21,8 +21,10 @@ window.Vue = require('vue').default;
 
 
 Vue.component('todo_component', require('./components/todoComponent.vue').default);
-Vue.component('modal_component', require('./components/modalComponent.vue').default);
-Vue.component('modal_find_component', require('./components/modalFindComponent.vue').default);
+// design
+
+// modal
+Vue.component('modal_component', require('./components/design/modal/modalComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

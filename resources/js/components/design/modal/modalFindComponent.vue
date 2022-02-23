@@ -14,7 +14,6 @@
                 this.$emit('myClickAction');
             },
             stopEvent: function () {
-                console.log('lkj')
                 event.stopPropagation()
             }
         }
