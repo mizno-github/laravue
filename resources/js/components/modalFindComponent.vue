@@ -1,6 +1,6 @@
 <template>
     <div id="overlay" @click="clickPush">
-        <div id="content">
+        <div id="content" @click="stopEvent">
             <p>これがモーダルウィンドウです。</p>
             <p><button @click="clickPush">close</button></p>
         </div>
@@ -12,6 +12,10 @@
         methods: {
             clickPush: function () {
                 this.$emit('myClickAction');
+            },
+            stopEvent: function () {
+                console.log('lkj')
+                event.stopPropagation()
             }
         }
     }

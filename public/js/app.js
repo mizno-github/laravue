@@ -5316,6 +5316,10 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     clickPush: function clickPush() {
       this.$emit('myClickAction');
+    },
+    stopEvent: function stopEvent() {
+      console.log('lkj');
+      event.stopPropagation();
     }
   }
 });
@@ -28669,7 +28673,7 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "overlay" }, on: { click: _vm.clickPush } }, [
-    _c("div", { attrs: { id: "content" } }, [
+    _c("div", { attrs: { id: "content" }, on: { click: _vm.stopEvent } }, [
       _c("p", [_vm._v("これがモーダルウィンドウです。")]),
       _vm._v(" "),
       _c("p", [
