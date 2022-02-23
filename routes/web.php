@@ -25,4 +25,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('/home');
 
-Route::view('/modal', 'modal');
+Route::prefix('design/')->group(function () {
+    Route::view('modal', 'design/modal');
+});
