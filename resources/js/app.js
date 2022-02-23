@@ -21,6 +21,7 @@ window.Vue = require('vue').default;
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('todo_component', require('./components/todoComponent.vue').default);
+Vue.component('modal_component', require('./components/modalComponent.vue').default);
 // Vue.component('todo_find_component', require('./components/todoFindComponent.vue').default);
 
 /**
