@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect()->to('/home');
+    return view('list');
 });
 
 Route::get('/error', function () {
@@ -26,5 +26,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('/home');
 
 Route::prefix('design/')->group(function () {
-    Route::view('modal', 'design/modal');
+    Route::view('modal', 'design/modal')->name('design.modal');
+    Route::view('tabMenu', 'design/tabMenu')->name('design.tabMenu');
 });
