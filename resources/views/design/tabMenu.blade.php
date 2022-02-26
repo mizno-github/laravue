@@ -2,6 +2,6 @@
 
 @section('content')
 <div class="container">
-    <todo_component></todo_component>
+    <tab_menu_component></tab_menu_component>
 </div>
 @endsection

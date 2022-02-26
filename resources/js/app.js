@@ -19,7 +19,13 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+
+Vue.component('todo_component', require('./components/todoComponent.vue').default);
+// design
+
+// modal
+Vue.component('modal_component', require('./components/design/modal/modalComponent.vue').default);
+Vue.component('side_menu_component', require('./components/design/sideMenu/sideMenuComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
