@@ -28,4 +28,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::prefix('design/')->group(function () {
     Route::view('modal', 'design/modal')->name('design.modal');
     Route::view('tabMenu', 'design/tabMenu')->name('design.tabMenu');
+    Route::view('sideMenu', 'design/sideMenu')->name('design.sideMenu');
 });
