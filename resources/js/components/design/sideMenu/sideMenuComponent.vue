@@ -11,6 +11,7 @@
         <li class="mt-3 py-2 text-center rounded bg-white listHover">ナス</li>
         <li class="mt-3 py-2 text-center rounded bg-white listHover">ピーマン</li>
         <li class="mt-3 py-2 text-center rounded bg-white listHover">キュウリ</li>
+        <li class="mt-3 py-2 text-center rounded bg-white listHover">かぼちゃ</li>
       </ul>
     </div>
   </div>
@@ -37,7 +38,7 @@ export default {
     color:#000;
     background-color:#888 !important;
   }
-  
+
   .listHover:hover{
     opacity:90% !important;
     color:white;
