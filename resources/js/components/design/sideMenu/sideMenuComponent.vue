@@ -37,7 +37,7 @@ export default {
     color:#000;
     background-color:#888 !important;
   }
-  
+
   .listHover:hover{
     opacity:90% !important;
     color:white;

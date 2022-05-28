@@ -1,7 +1,11 @@
 <template>
     <div>
         <button @click="openModal">click</button>
-        <modal-find-component v-show="showContent" @myClickAction="closeModal"></modal-find-component>
+        <modal-find-component v-show="showContent" @myClickAction="closeModal">
+            <template v-slot:head>
+                <p>head slot</p>
+            </template>
+        </modal-find-component>
     </div>
 </template>
 

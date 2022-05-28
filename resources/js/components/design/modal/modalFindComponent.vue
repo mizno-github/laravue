@@ -2,6 +2,7 @@
     <div id="overlay" @click="clickPush">
         <div id="content" @click="stopEvent">
             <p>これがモーダルウィンドウです。</p>
+                <slot name="head"></slot>
             <p><button @click="clickPush">close</button></p>
         </div>
     </div>
